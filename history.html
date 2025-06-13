@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>ARK Traveling Blog</title>
+    <link rel="icon" href="Design/menu/logo_ark.png" type="image/png">
+    <link rel="stylesheet" href="Design/menu/menu_style.css">
+    <link rel="stylesheet" href="Design/history/history_style.css">
+    <link rel="stylesheet" href="Design/menu/footer.css">
+    <script src="Design/menu/menu_function.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<!-- menu here -->
+<header>
+    <nav>
+        <img src="Design/menu/Logo_Ark.png" alt="Blog Logo" class="nav-logo">
+        <button onclick="navigate('page_main.html')" class="button">Home</button>
+        <button onclick="navigate('history.html')" class="button">History & Culture</button>
+        <button onclick="navigate('activities.html')" class="button">Activities</button>
+        <button onclick="navigate('About_Dev.html')" class="button">About Developer</button>
+    </nav>
+</header>
+
+<body>
+    <!-- History Section: Text left, video right -->
+    <div class="history_container">
+        <div class="history_container-text">
+            <h1>History:</h1>
+            <p>
+                Founded as a Roman city, Barcelona has a rich history that spans over 2,000 years. The city was originally known as "Barcino" and was established in the 1st century BC. 
+                Over the centuries, it has been influenced by various cultures including the Visigoths, Moors, and Franks. Barcelona played a significant role during the Middle Ages as 
+                a major trading hub in the Mediterranean.
+            </p>
+            <p>
+                The city's Gothic Quarter bears witness to the splendour enjoyed by the city from the 13th to the 15th centuries. From the 15th to 18th centuries Barcelona entered a period of decline, 
+                while it struggled to maintain its economic and political independence. This struggle ended in 1714, when the city fell to the Bourbon troops and Catalonia's and Catalans' 
+                rights and privileges were suppressed. 
+            </p>
+            <p>
+                In the 20th century, Barcelona underwent significant industrialization and urban expansion, leading to the creation of iconic structures such as the Eixample district. The 
+                Catalan Antoni Gaudí, one of the most eminent architects, designed buildings such as the Casa Milà (known as La Pedrera, the Catalan for stone quarry), 
+                the Casa Batlló and the Sagrada Família church, which have become world-famous landmarks.
+            </p>
+        </div>
+        <div class="history_video-container">
+            <video src="Design/history/SagradaFamilia.mp4" autoplay muted loop class="side-video"></video>
+        </div>
+    </div>
+
+    <!-- Culture Section: Video left, text right -->
+    <div class="culture_container">
+        <div class="culture_video-container">
+            <video src="Design/history/LaBoqueria.mp4" autoplay muted loop class="side-video"></video>
+        </div>
+        <div class="culture_container-text">
+            <h1>Culture:</h1>
+            <p>
+                Barcelona is renowned for its vibrant culture, which is a blend of Catalan traditions and modern influences. The city is famous for its art scene, with numerous museums 
+                and galleries showcasing works by artists such as Pablo Picasso and Joan Miró. The annual Festes de la Mercè, held in September, celebrates the city's patron saint with parades, 
+                concerts, and fireworks.
+            </p>
+            <p>
+                The city is also known for its culinary delights, including tapas, paella, and a variety of seafood dishes. The bustling La Boqueria market is a must-visit for food lovers. 
+                Additionally, Barcelona's architecture reflects its rich cultural heritage, with Gothic, Modernisme (Catalan Art Nouveau), and contemporary styles coexisting harmoniously.
+            </p>
+            <p>
+                Football is an integral part of Barcelona's culture, with FC Barcelona being one of the most successful football clubs in the world. The team's home ground, Camp Nou, 
+                is a major attraction for both locals and tourists.
+            </p>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <section class="footer">
+        <p>&copy; 2025 ARK Blog. All rights reserved.</p>
+        <p>Developed by MigueAAM</p>
+    </section>
+</footer>

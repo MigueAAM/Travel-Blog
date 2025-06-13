@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>ARK Blog</title>
+    <link rel="icon" href="Design/menu/logo_ark.png" type="image/png">
+    <link rel="stylesheet" href="Design/menu/menu_style.css">
+    <link rel="stylesheet" href="Design/home_page/home_style.css">
+    <link rel="stylesheet" href="Design/menu/footer.css">
+    <script src="Design/menu/menu_function.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<!-- menu here -->
+<header>
+    <nav>
+        <img src="Design/menu/logo_ark.png" alt="Blog Logo" class="nav-logo">
+        <button onclick="navigate('page_main.html')" class="button">Home</button>
+        <button onclick="navigate('history.html')" class="button">History & Culture</button>
+        <button onclick="navigate('activities.html')" class="button">Activities</button>
+        <button onclick="navigate('About_Dev.html')" class="button">About Developer</button>
+    </nav>
+</header>
+
+<body>
+    <!-- Hero section with video background -->
+    <section class="hero-section">
+        <video autoplay muted loop id="bgVideo">
+            <source src="Design/home_page/main_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    <!-- White section starts after video -->
+    <section class="white-section">
+        <div class="white-section-columns">
+            <div class="white-section-text">
+                <h1>Welcome to a journey through Barcelona!</h1>
+                <h3>City that dances to its own rhythm</h3>
+                <p>
+                    From the Gothic Quarter's ancient streets to the architectural marvels of Gaudí that touch the sky, 
+                    Barcelona is a feast for the senses. This site is your personal guide to exploring its vibrant neighborhoods, 
+                    tasting its unforgettable culinary delights, and uncovering the rich history that makes this city a true European treasure.
+                </p>
+                <p>
+                    Whether you're wandering through the bustling markets, relaxing on the sun-kissed beaches, or marveling at the 
+                    stunning art and architecture, Barcelona promises an experience that will linger in your heart long after you leave.
+                </p>
+                <p>
+                    Join us as we delve into the stories, culture, and activities that make Barcelona a city like no other. 
+                </p>
+                <p>
+                    Your adventure begins here!
+                </p>
+            </div>
+            <div class="white-section-image-container">
+                <img src="Design/home_page/bar_city.jpg" alt="Barcelona Image" class="white-section-image">
+            </div>
+        </div>
+        <div class="home-buttons">
+            <button onclick="navigate('history.html')" class="home-button">Explore History & Culture</button>
+            <button onclick="navigate('activities.html')" class="home-button">Discover Activities</button>
+        </div>
+    </section>
+</body>
+
+<footer>
+    <section class="footer">
+        <p>&copy; 2025 ARK Blog. All rights reserved.</p>
+        <p>Developed by MigueAAM</p>
+</footer>
