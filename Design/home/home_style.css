@@ -1,13 +1,15 @@
+/* background video styles */
+/* This CSS file styles the homepage of the ARK Travel Blog, including a background video,
+   welcome section, main content area, and responsive design for mobile devices. */
+
 #bgVideo {
     position: absolute;
-
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     object-fit: cover;
     z-index: -1;
-    background: #000;
     min-width: 100vw;
     min-height: 100vh;
 }
@@ -17,24 +19,38 @@ body {
     overflow-x: hidden;
 }
 
-/* Responsive adjustments for phones */
-@media (max-width: 700px) {
-    #bgVideo {
-        width: 100vw;
-        height: 100vh;
-        min-width: 100vw;
-        min-height: 100vh;
-        object-fit: cover;
-    }
+/* welcome section styles */
+.welcome-section {
+    display: flex;
+    background: none;
+    justify-content: center;
+    align-items: center;
+    position: center;
+    z-index: 1;
+    margin-top: 80px;
+}
+
+.welcome-section-text h1 {
+    font-family: "Sofia", sans-serif;
+    font-size: 130px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 2px 8px black;
+}
+.welcome-section-text p {
+    font-family: "Spectral", serif;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 2px 8px black;
 }
 
 /* styles for the main content */
-
 .white-section {
     background: white;
     font-size: large;
     width: 100vw;
-    min-height: 100vh;
+    min-height: 75vh;
     padding: 40px 10vw 40px 10vw;
     box-sizing: border-box;
     position: relative;
@@ -46,13 +62,6 @@ body {
     height: auto;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Optional: Responsive padding for mobile */
-@media (max-width: 700px) {
-    .white-section {
-        padding: 20px 5vw 20px 5vw;
-    }
 }
 
 /* Hero section styles (video) */
@@ -88,12 +97,25 @@ body {
 
 .white-section-text {
     flex: 1;
+    font-size: 17px;
     padding-right: 20px;
+}
+
+.white-section-text h1,
+.white-section-text h2 {
+    font-family: "Spectral", serif;
+}
+
+.white-section-text p {
+    font-family: Rubik, sans-serif;
+    line-height: 1.5;
 }
 
 .white-section-image-container {
     flex: 1;
     display: flex;
+    margin-top: 50px;
+    margin-left: 40px;
     justify-content: center;
     align-items: center;
 }
@@ -105,34 +127,58 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Button styles */
-.home-button {
-    background-color: black;
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-decoration-line: overline;
-    text-align: center;
-    border-radius: 10px;
-    align-items: center;
-    margin-top: 25px;
-    cursor: pointer;
-    font-size: 23px;
-    font-weight: 300;
-    text-decoration: none;
-    border: none;
-    padding: 20px 30px;
-    transition-duration: 0.5s;
+.main-content {
+    margin-top: 80px; 
+    transition: margin-top 0.3s;
 }
 
-.home-button:hover{
-    background-color: rgb(170, 170, 170); 
-    color: white;
-    border: none;
-}
 
-.home-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 30px;
+/* Responsive styles for phones */
+@media (max-width: 700px) {
+    .main-content {
+        margin-top: 300px; 
+    }
+
+    .welcome-section {
+        margin-top: 250px;
+        padding: 0 5vw;
+    }
+    .welcome-section-text h1 {
+        font-size: 60px;
+        line-height: 1.1;
+        margin-bottom: 10px;
+    }
+    .welcome-section-text p {
+        font-size: 18px;
+        margin-top: 10px;
+        line-height: 1.4;
+    }
+    .white-section {
+        padding: 20px 3vw 20px 3vw;
+        min-height: 60vh;
+    }
+    .white-section-columns {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+        padding: 0;
+    }
+    .white-section-text {
+        padding-right: 0;
+        margin-left: 5px;
+        font-size: 16px;
+    }
+    .white-section-image-container {
+        margin-top: 20px;
+        margin-right: 36px;
+    }
+    .white-section-image {
+        max-width: 95vw;
+        border-radius: 8px;
+    }
+    .hero-content {
+        top: 30%;
+        font-size: 18px;
+        padding: 0 5vw;
+    }
 }
