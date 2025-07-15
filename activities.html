@@ -1,23 +1,214 @@
+<!--
+    Activities Page
+    This page highlights activities and attractions in Barcelona, including museums, landmarks, and day trips.
+-->
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <title>ARK Traveling Blog</title>
+    <title>ARK Travel Blog</title>
     <link rel="icon" href="Design/menu/logo_ark.png" type="image/png">
     <link rel="stylesheet" href="Design/menu/menu_style.css">
+    <link rel="stylesheet" href="Design/external_buttons.css">
+    <link rel="stylesheet" href="Design/menu/footer.css">
+    <link rel="stylesheet" href="Design/pages_style.css">
+    <link rel="stylesheet" href="Design/activities/museum_table.css">
     <script src="Design/menu/menu_function.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral|Rubik">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
+<!-- Navigation menu for site-wide navigation -->
 <header>
     <nav>
         <img src="Design/menu/Logo_Ark.png" alt="Blog Logo" class="nav-logo">
         <button onclick="navigate('page_main.html')" class="button">Home</button>
         <button onclick="navigate('history.html')" class="button">History & Culture</button>
         <button onclick="navigate('activities.html')" class="button">Activities</button>
-        <button onclick="navigate('About_Dev.html')" class="button">About Developer</button>
+        <button onclick="navigate('About_Dev.html')" class="button">About</button>
     </nav>
 </header>
 
 <body>
+    <div class="main-content">
+        <!-- Activities Section: Sagrada Família tour with video -->
 
+        <div class="pages_container">
+            <div class="pages_container-text">
+                <h2>Tour The Sagrada Família:</h2>
+                <p>
+                    Experience the Antoni Gaudí's unfinished masterpiece. This iconic basilica, 
+                    still under construction, is a UNESCO World Heritage site and a must-visit for any traveler.
+                    Gaudí, a keen observer of nature, designed the basilica's interior to resemble a forest. 
+                    The massive interior columns branch out near the ceiling, creating a canopy-like effect that filters 
+                    light in a way that mimics sunlight dappling through leaves. This innovative use of angled columns not only provides 
+                    structural support but also creates a sense of awe-inspiring space and light.
+                </p>            
+                <div class="pages_video-container">
+                    <video src="Design/activities/sagrada_familia.mp4" autoplay muted loop class="side-video"></video>
+                </div>
+            </div>
+            
+            <div class="pages_container-text">
+                <h2>Explore the Gothic Streets:</h2>
+                <p>
+                    Wander through the narrow, winding streets of Barcelona's Gothic Quarter, where history comes alive.
+                    This area is home to stunning medieval architecture, including the Barcelona Cathedral and the Plaça del Rei.
+                    As you explore, take in the intricate details of the buildings and the vibrant atmosphere of the neighborhood.
+                </p>            
+                <div class="pages_video-container">
+                    <video src="Design/activities/gothic_street.mp4" autoplay muted loop class="side-video"></video>
+                </div>
+            </div>
+
+            <div class="pages_container-text">
+                <h2>Take pictures on Casa Batlló:</h2>
+                <p>
+                    Casa Batlló is one of Antoni Gaudí's masterpieces, showcasing his unique architectural style.
+                    The building's colorful façade, adorned with intricate mosaics and organic shapes, is a photographer's dream.
+                    Be sure to capture the stunning details, from the dragon-like roof to the whimsical windows.
+                </p>            
+                <div class="pages_video-container">
+                    <video src="Design/activities/casa_batllo.mp4" autoplay muted loop class="side-video"></video>
+                </div>
+            </div>
+        </div>
+
+        <!-- Museums Section: Art museums with images -->
+        <div class="pages_container">       
+
+            <!-- Museum Descriptions & list-->
+            <div class="pages_container-text">
+                <h1>Museums of Barcelona:</h1>
+                <ul>
+                    <li>
+                        <h2>Visit Museu d'Art Contemporani de Barcelona</h2>
+                        <p>
+                            The Museu d'Art Contemporani de Barcelona (MACBA) is a hub for contemporary art enthusiasts. 
+                            Located in the Raval district, the museum features a diverse collection of works from the mid-20th century to the present day.
+                            The building itself, designed by Richard Meier, is a modern architectural marvel that contrasts with the surrounding historic buildings.
+                            Visitors can explore exhibitions that include works by artists such as Antoni Tàpies, Joan Miró, and many international contemporary artists.
+                        </p>
+                        <div class="external-buttons">
+                            <a href="https://www.macba.cat/es/" target="_blank" class="external-button">
+                            More about MACBA
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <h2>Visit The Picasso Museum</h2>
+                        <p>
+                            The Picasso Museum in Barcelona is a must-visit for art lovers. 
+                            It houses one of the most extensive collections of artworks by the 20th-century Spanish artist Pablo Picasso, 
+                            with over 4,000 pieces. The museum is located in the El Born district, in five adjoining medieval palaces.
+                            Visitors can expect to see iconic pieces like "Science and Charity," "Harlequin," and "Portrait of Jaime Sabartes".
+                        </p>
+                        
+                        <div class="external-buttons">
+                            <a href="https://www.museupicasso.bcn.cat/en/" target="_blank" class="external-button">
+                            More about Picasso Museum
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <h2>Museu Nacional d'Art de Catalunya</h2>
+                        <p>
+                            The Museu Nacional d'Art de Catalunya (MNAC) is a treasure trove of Catalan art, 
+                            showcasing works from the Romanesque period to the mid-20th century. 
+                            Located in the Palau Nacional on Montjuïc hill, the museum offers stunning views of the city.
+                            Highlights include Romanesque frescoes, Gothic altarpieces, and modernist masterpieces.
+                        </p>
+                        
+                        <div class="external-buttons">
+                            <a href="https://www.museunacional.cat/en/" target="_blank" class="external-button">
+                            More about MNAC
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="side-media-container">
+                <!-- Museum Information Table -->
+                <img src="Design/activities/contemporary_art.jpg" alt="Museu d'Art Contemporani de Barcelona" class="side-media-img">
+                <table class="museum-info-table">
+                    <thead>
+                        <tr>
+                            <th>Museum</th>
+                            <th>Opening Hours</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MACBA</td>
+                            <td>Mon-Fri: 11:00-19:30<br>Sat: 10:00-21:00<br>Sun: 10:00-15:00</td>
+                            <td>€10 (Adults)<br>€8 (Students)</td>
+                        </tr>
+                        <tr>
+                            <td>Picasso Museum</td>
+                            <td>Tue-Sun: 09:00-19:00<br>Thu: 09:00-21:30<br>Mon: Closed</td>
+                            <td>€12 (Adults)<br>€7 (Students)</td>
+                        </tr>
+                        <tr>
+                            <td>MNAC</td>
+                            <td>Tue-Sat: 10:00-18:00<br>Sun: 10:00-15:00<br>Mon: Closed</td>
+                            <td>€12 (Adults)<br>€8.40 (Students)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Montserrat Section: Day trip and hiking with images -->
+        <div class="pages_container">      
+            <div class ="pages_container-text">
+                <h1>Day Trips & Scenic Views:</h1>
+                <ul>
+                    <li>
+                        <h2>Hike to the Bunkers del Carmel:</h2> 
+                        <p>
+                            For the absolute best panoramic view of Barcelona, head to this viewpoint. 
+                            It's a former anti-aircraft battery, and today it's a popular spot to watch the sunset over the entire city.
+                        </p>
+                        <p>
+                            Bring a picnic and enjoy the view!
+                        </p>
+                    </li>
+                    <li>
+                        <h2>Take a Day Trip to Montserrat:</h2> 
+                        <p>
+                            Just an hour away by train, this multi-peaked mountain range is home to a Benedictine monastery. 
+                            It offers breathtaking views, beautiful hiking trails, and a chance to see the famous "Black Madonna" statue. Montserrat is a unique mountain range located 
+                            about 30 kilometers northwest of Barcelona. It is famous for its distinctive rock formations and the Montserrat Monastery, which houses the revered Black Madonna 
+                            statue. The area offers numerous hiking trails, ranging from easy walks to challenging climbs, providing stunning views of the surrounding landscape.
+                        </p>
+                    </li>
+                    <li>
+                        <h2>Visit a Cava Winery in the Penedès Region:</h2> 
+                        <p>
+                            Explore Spain's famous sparkling wine region, located just outside of Barcelona. 
+                            Many wineries offer tours and tastings. The Penedès region, located southwest of Barcelona, is renowned for its production of Cava, 
+                            a sparkling wine made using the traditional method. Visitors can tour various wineries, learn about the Cava-making process, and enjoy 
+                            tastings of this delicious beverage.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="side-media-container">
+                <img src="Design/activities/Bunkers_del_Carmel.jpg" alt="Bunkers del Carmel" class="side-media-img">
+                <img src="Design/activities/montserrat_landscape.jpg" alt="Montserrat Landscape" class="side-media-img">
+                <img src="Design/activities/wineyard_penedes.jpg" alt="Cava Winery" class="side-media-img">
+            </div>
+        </div>
+    </div>
 </body>
+
+<!-- Footer with copyright and developer info -->
+<footer>
+    <section class="footer">
+        <p>&copy; 2025 ARK Blog. All rights reserved.</p>
+        <p>Developed by MigueAAM</p>
+    </section>
+</footer>
+</html>

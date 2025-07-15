@@ -1,10 +1,18 @@
 <!DOCTYPE html>
+<!--
+    About Developer Page
+    This page provides information about the developer and purpose of ARK Travel Blog.
+-->
 <head>
     <meta charset="UTF-8">
-    <title>ARK Traveling Blog</title>
+    <title>ARK Travel Blog</title>
     <link rel="icon" href="Design/menu/logo_ark.png" type="image/png">
     <link rel="stylesheet" href="Design/menu/menu_style.css">
+    <link rel="stylesheet" href="Design/menu/footer.css">
+    <link rel="stylesheet" href="Design/pages_style.css">
     <script src="Design/menu/menu_function.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral|Rubik">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -14,10 +22,59 @@
         <button onclick="navigate('page_main.html')" class="button">Home</button>
         <button onclick="navigate('history.html')" class="button">History & Culture</button>
         <button onclick="navigate('activities.html')" class="button">Activities</button>
-        <button onclick="navigate('About_Dev.html')" class="button">About Developer</button>
+        <button onclick="navigate('About_Dev.html')" class="button">About</button>
     </nav>
 </header>
 
 <body>
-    
+    <div class="main-content">
+        <div class="pages_container">
+
+            <!-- Ark Blog Mission & About -->
+            <div class="pages_container-text">
+                <h2>About ARK Travel Blog</h2>
+                <p>
+                    Welcome to ARK Travel Blog, your go-to source for exploring the world's most fascinating destinations. 
+                    My blog is dedicated to providing you with insightful articles, travel tips, and cultural insights to enhance your travel experiences.
+                </p>
+                
+                <h2>My Mission:</h2>
+                <p>
+                    At ARK Travel Blog, I believe that travel is not just about visiting new places, but about immersing yourself in 
+                    different cultures and creating lasting memories. My mission is to inspire and empower travelers to embark on their own adventures.
+                </p>              
+                <div class="side-media-container">
+                    <img src="Design/about/Ark_Logobkg.png" alt="Montserrat Buildings" class="side-media-img"> 
+                </div>
+            </div>
+            
+            <!-- Developer Information -->
+            <div class="pages_container-text">
+                <h1>About Developer:</h1>
+                <p>
+                    Hello! I'm Miguel A. <br>
+                    I'm a travel enthusiast with a passion for exploring new cultures and sharing my experiences with others. 
+                    Through this blog, I am committed to providing valuable insights and tips to fellow travelers, helping them make the most of 
+                    their journeys. I'm from Spain, and I was born in Barcelona, and that's why I choose my hometown for inspiration and first place for my blog. My major is Cybersecurity, but this blog is 
+                    a personal project that reflects my love for travel and writing. 
+                </p> 
+                <p>
+                    My passion for development and travel has led me to create this blog, where I can share my experiences and insights with 
+                    fellow travelers. I believe that travel is a powerful way to connect with people, learn about different cultures, and create lasting memories. 
+                    Through this blog, I hope to inspire others to explore my country. 
+                </p>           
+                <div class="side-media-container">
+                    <img src="Design/about/me_pic.jpg" alt="Developer Image" class="side-media-img">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
+<footer>
+    <section class="footer">
+        <p>&copy; 2025 ARK Blog. All rights reserved.</p>
+        <p>Developed by MigueAAM</p>
+    </section>
+</footer>
+</html>
