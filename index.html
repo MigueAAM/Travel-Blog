@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+    Main Page
+    This is the homepage of the ARK Travel Blog, introducing Barcelona and providing navigation to other sections.
+-->
+<head>
+    <meta charset="UTF-8">
+    <title>ARK Travel Blog</title>
+    <link rel="icon" href="Design/menu/logo_ark.png" type="image/png">
+    <link rel="stylesheet" href="Design/reset.css">
+    <link rel="stylesheet" href="Design/pages_style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral|Rubik">
+    <script src="Design/menu/menu_function.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- Navigation menu for site-wide navigation -->
+    <header>
+        <nav>
+            <img src="Design/menu/logo_ark.png" alt="Blog Logo" class="nav-logo">
+            <button onclick="navigate('index.html')" class="button">Home</button>
+            <button onclick="navigate('history.html')" class="button">History & Culture</button>
+            <button onclick="navigate('activities.html')" class="button">Activities</button>
+            <button onclick="navigate('About_Dev.html')" class="button">About</button>
+        </nav>
+    </header>
+    <div class="main-content">
+        <!-- Hero section with background video and welcome message -->
+        <section class="hero-section">
+            <video autoplay muted loop id="bgVideo">
+                <source src="Design/home_page/back_video.mp4" type="video/mp4">
+            </video>
+            <div class="welcome-section">
+                <div class="welcome-section-text">
+                    <h1>Barcelona</h1>
+                    <p>&darr; Scroll for more &darr;</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main content section introducing Barcelona and navigation buttons -->
+        <section class="white-section">
+            <div class="white-section-columns">
+                <!-- Text introduction to Barcelona -->
+                <div class="white-section-text">
+                    <h1>Welcome to a journey through Barcelona!</h1>
+                    <h2>City that dances to its own rhythm</h2>
+                    <p>
+                        From the Gothic Quarter's ancient streets to the architectural marvels of Gaudí that touch the sky, 
+                        Barcelona is a feast for the senses. This site is your personal guide to exploring its vibrant neighborhoods, 
+                        tasting its unforgettable culinary delights, and uncovering the rich history that makes this city a true European treasure.
+                    </p>
+                    <p>
+                        Whether you're wandering through the bustling markets, relaxing on the sun-kissed beaches, or marveling at the 
+                        stunning art and architecture, Barcelona promises an experience that will linger in your heart long after you leave.
+                    </p>
+                    <p>
+                        Join us as we delve into the stories, culture, and activities that make Barcelona a city like no other. 
+                    </p>
+                </div>
+                <!-- Image of Barcelona -->
+                <div class="white-section-image-container">
+                    <video class="white-section-image" autoplay muted loop>
+                        <source src="Design/home_page/statue_video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <!-- Navigation buttons to other sections -->
+            <div class="external-buttons">
+                <button onclick="navigate('history.html')" class="external-button">Explore History & Culture</button>
+                <button onclick="navigate('activities.html')" class="external-button">Discover Activities</button>
+            </div>
+        </section>
+    </div>
+</body>    
+
+<!-- Footer with copyright and developer info -->
+<footer>
+    <section class="footer">
+        <p>&copy; 2025 ARK Blog. All rights reserved.</p>
+        <p>Developed by MigueAAM</p>
+    </section>
+</footer>
+</html>
